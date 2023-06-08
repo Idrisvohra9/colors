@@ -1,6 +1,7 @@
 LICENSE
 README.md
 setup.py
+test/test.py
 trmnl_colors/__init__.py
 trmnl_colors.egg-info/PKG-INFO
 trmnl_colors.egg-info/SOURCES.txt
