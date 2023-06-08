@@ -5,10 +5,10 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="trmnl-colors",
-    version="4.0.4",
+    version="4.0.5",
     author="Idris-Vohra",
     author_email="idrishaider987@gmail.com",
-    packages=["trmnl-colors"],
+    packages=["trmnl_colors"],
     description="Colors, text formats, decorations and much more for TERMINAL",
     long_description=description,
     long_description_content_type="text/markdown",
