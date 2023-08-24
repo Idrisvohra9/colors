@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-from .constants import *
-from .functions import *
-=======
 """
 
 # trmnl_colors v-4.0.5
@@ -276,4 +272,3 @@ def invisible():
     print("\033[0;8m",end="")
     
     
->>>>>>> fd95937593326f919bbe1008dca5404eb67ad8a9

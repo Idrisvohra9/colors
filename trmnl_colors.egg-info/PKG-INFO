@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: trmnl-colors
-Version: 4.0.5
+Version: 4.0.6
 Summary: Colors, text formats, decorations and much more for TERMINAL
 Home-page: https://github.com/Idrisvohra9/colors
 Author: Idris-Vohra
@@ -11,15 +11,32 @@ Description-Content-Type: text/markdown
 License-File: LICENSE
 
 
-# trmnl_colors v-4.0.5
+# trmnl_colors v-4.0.6
 ## Add colors to the static WOrLd!
 
 
 colors module is made to colorize the output of terminal when the code runs on command line, With that there are functions for adding basic text colors (Total 10 including invsisble) and or text formats such as Bold, Italics, Underline, Light or Strikethrough to your code.
 
 But wait there is more! use background colors, filled Variants which can be accessed by calling thier specific name and 'bg' postfix as in background. Here is an example describing with  use case:
+
+## Latest Updates:
+
+### Introducing constants to make your life more easier:
+
+>### Use case for constants
+
 ```python
-from trmnl_colors import *
+from trmnl_colors.constants import *
+
+print(RedB + "Hello" + GreenB + " World!", end="")
+
+print(RESET,end="")
+
+```
+>### Use case for functions
+
+```python
+from trmnl_colors.functions import *
 bluebg()
 print("Hello")
 reset()
@@ -27,7 +44,7 @@ reset()
 
 * Each color can be accessed by calling thier particular name and the first letter of the format at the postfix.
 ```python
-from trmnl_colors import *
+from trmnl_colors.functions import *
 yellowB()
 print("Hello") # After every color call remember to call the reset function.
 # Outputs Hello in yellow color in Bold text
@@ -42,5 +59,7 @@ reset()
 * 
 * PS if you want to create blocks of colors for decoration purposes use filled variants e.g. clr.whitefilled() 
 
-Explore & stay Creative
-### by: Idris-Vohra :O
+## Terminal Application Screenshots with trmnl_colors:
+
+> Explore & stay Creative
+>## by: Idris-Vohra

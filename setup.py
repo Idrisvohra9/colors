@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="trmnl-colors",
-    version="4.0.6",
+    version="4.0.7",
     author="Idris-Vohra",
     author_email="idrishaider987@gmail.com",
     packages=["trmnl_colors"],

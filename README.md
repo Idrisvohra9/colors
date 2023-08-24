@@ -1,5 +1,5 @@
 
-# trmnl_colors v-4.0.5
+# trmnl_colors v-4.0.7
 ## Add colors to the static WOrLd!
 
 
@@ -48,6 +48,9 @@ reset()
 * PS if you want to create blocks of colors for decoration purposes use filled variants e.g. clr.whitefilled() 
 
 ## Terminal Application Screenshots with trmnl_colors:
+### Create Terminal programs such as the below examples. Only your imagination and python skills are a limit!
 
+![Screenshots](https://github.com/Idrisvohra9/trmnl-colors/blob/main/static/Screenshot%202023-08-24%20171908.png?raw=true)
+![Screenshots](https://github.com/Idrisvohra9/trmnl-colors/blob/main/static/Screenshot%202023-08-24%20172610.png?raw=true)
 > Explore & stay Creative
 >## by: Idris-Vohra
