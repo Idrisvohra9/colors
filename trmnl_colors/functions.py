@@ -1,274 +1,321 @@
 """
+This code snippet defines a series of functions that print colored text in the console using ANSI escape codes. Each function corresponds to a different color or text style, such as bold, italics, underline, or strike-through. There are also functions for setting the background color and making the text invisible. The functions take no arguments and simply print the appropriate escape code to change the text color or style. The escape codes are represented as strings and are printed using the print() function with the end parameter set to an empty string to prevent a newline character from being added. The code snippet is not a class, but a collection of standalone functions.
 
-# trmnl_colors v-4.0.5
-## Add colors to the static WOrLd!
+Use Case:
 
-
-colors module is made to colorize the output of terminal when the code runs on command line, With that there are functions for adding basic text colors (Total 10 including invsisble) and or text formats such as Bold, Italics, Underline, Light or Strikethrough to your code.
-
-But wait there is more! use background colors, filled Variants which can be accessed by calling thier specific name and 'bg' postfix as in background. Here is an example describing with  use case:
 ```python
-from trmnl_colors import *
-bluebg()
+from trmnl_colors.functions import *
+blueBg()
 print("Hello")
-reset()
+white()
 ```
-
-* Each color can be accessed by calling thier particular name and the first letter of the format at the postfix.
-```python
-from trmnl_colors import *
-yellowB()
-print("Hello") # After every color call remember to call the reset function.
-# Outputs Hello in yellow color in Bold text
-reset()
-```
-* For example:Call clr.redB() for red color with text format Bold, S for strikethrough D for Default U for Underline I for Italics L is for special lighter color substitute for each color.
-
-
-* There are also filled color variants in which the font color and the background color match each other making them viable for specific type of color operations. 
-
-* There is a special function called reset() which is basically the default white so that the color function gets reset it is recommended to use this function after every usage of a color to mantain the color of the terminal.
-* 
-* PS if you want to create blocks of colors for decoration purposes use filled variants e.g. clr.whitefilled() 
-
-Explore & stay Creative
-### by: Idris-Vohra :O
 
 """
-def blackD(): # Default
-    print("\033[0;30m",end="")
 
-def blackB(): # Bold
-    print("\033[1;30m",end="")
 
-def blackL(): # Light
-    print("\033[2;30m",end="")
+def black():  # Default
+    print("\033[0;30m", end="")
 
-def blackI(): # Italics
-    print("\033[3;30m",end="")
 
-def blackU(): # Underline
-    print("\033[4;30m",end="")
+def blackBold():  # Bold
+    print("\033[1;30m", end="")
 
-def blackS(): # Strikethrough
-    print("\033[9;30m",end="")
+
+def blackLight():  # Light
+    print("\033[2;30m", end="")
+
+
+def blackItalics():  # Italics
+    print("\033[3;30m", end="")
+
+
+def blackUnderline():  # Underline
+    print("\033[4;30m", end="")
+
+
+def blackStrikeThrough():  # StrikeThrough
+    print("\033[9;30m", end="")
 
 # Red:-
-def redD(): # Default 
-    print("\033[0;31m",end="")
 
-def redB(): # Bold
-    print("\033[1;31m",end="")
 
-def redL(): # Light
-    print("\033[2;31m",end="")
+def red():  # Default
+    print("\033[0;31m", end="")
 
-def redI(): # Italics
-    print("\033[3;31m",end="")
 
-def redU(): # Underline
-    print("\033[4;31m",end="")
+def redBold():  # Bold
+    print("\033[1;31m", end="")
 
-def redS(): # Strikethrough
-    print("\033[9;31m",end="")
+
+def redLight():  # Light
+    print("\033[2;31m", end="")
+
+
+def redItalics():  # Italics
+    print("\033[3;31m", end="")
+
+
+def redUnderline():  # Underline
+    print("\033[4;31m", end="")
+
+
+def redStrikeThrough():  # StrikeThrough
+    print("\033[9;31m", end="")
 
 
 # Green:-
-def greenD():
-    print("\033[0;32m",end="")
+def green():
+    print("\033[0;32m", end="")
 
-def greenB():
-    print("\033[1;32m",end="")
 
-def greenL():
-    print("\033[2;32m",end="")
+def greenBold():
+    print("\033[1;32m", end="")
 
-def greenI():
-    print("\033[3;32m",end="")
 
-def greenU():
-    print("\033[4;32m",end="")
+def greenLight():
+    print("\033[2;32m", end="")
 
-def greenS():
-    print("\033[9;32m",end="")
+
+def greenItalics():
+    print("\033[3;32m", end="")
+
+
+def greenUnderline():
+    print("\033[4;32m", end="")
+
+
+def greenStrikeThrough():
+    print("\033[9;32m", end="")
 
 
 # Yellow:-
-def yellowD():
-    print("\033[0;33m",end="")
+def yellow():
+    print("\033[0;33m", end="")
 
-def yellowB():
-    print("\033[1;33m",end="")
 
-def yellowL():
-    print("\033[2;33m",end="")
+def yellowBold():
+    print("\033[1;33m", end="")
 
-def yellowI():
-    print("\033[3;33m",end="")
 
-def yellowU():
-    print("\033[4;33m",end="")
+def yellowLight():
+    print("\033[2;33m", end="")
 
-def yellowS():
-    print("\033[9;33m",end="")
+
+def yellowItalics():
+    print("\033[3;33m", end="")
+
+
+def yellowUnderline():
+    print("\033[4;33m", end="")
+
+
+def yellowStrikeThrough():
+    print("\033[9;33m", end="")
 
 
 # Blue:-
-def blueD():
-    print("\033[0;34m",end="")
+def blue():
+    print("\033[0;34m", end="")
 
-def blueB():
-    print("\033[1;34m",end="")
 
-def blueL():
-    print("\033[2;34m",end="")
+def blueBold():
+    print("\033[1;34m", end="")
 
-def blueI():
-    print("\033[3;34m",end="")
 
-def blueU():
-    print("\033[4;34m",end="")
+def blueLight():
+    print("\033[2;34m", end="")
 
-def blueS():
-    print("\033[9;34m",end="")
+
+def blueItalics():
+    print("\033[3;34m", end="")
+
+
+def blueUnderline():
+    print("\033[4;34m", end="")
+
+
+def blueStrikeThrough():
+    print("\033[9;34m", end="")
 
 
 # Magenta:-
-def magentaD():
-    print("\033[0;35m",end="")
+def magenta():
+    print("\033[0;35m", end="")
 
-def magentaB():
-    print("\033[1;35m",end="")
 
-def magentaL():
-    print("\033[2;35m",end="")
+def magentaBold():
+    print("\033[1;35m", end="")
 
-def magentaI():
-    print("\033[3;35m",end="")
 
-def magentaU():
-    print("\033[4;35m",end="")
+def magentaLight():
+    print("\033[2;35m", end="")
 
-def magentaS():
-    print("\033[9;35m",end="")
+
+def magentaItalics():
+    print("\033[3;35m", end="")
+
+
+def magentaUnderline():
+    print("\033[4;35m", end="")
+
+
+def magentaStrikeThrough():
+    print("\033[9;35m", end="")
 
 
 # Cyan:-
-def cyanD():
-    print("\033[0;36m",end="")
+def cyan():
+    print("\033[0;36m", end="")
 
-def cyanB():
-    print("\033[1;36m",end="")
 
-def cyanL():
-    print("\033[2;36m",end="")
+def cyanBold():
+    print("\033[1;36m", end="")
 
-def cyanI():
-    print("\033[3;36m",end="")
 
-def cyanU():
-    print("\033[4;36m",end="")
+def cyanLight():
+    print("\033[2;36m", end="")
 
-def cyanS():
-    print("\033[9;36m",end="")
+
+def cyanItalics():
+    print("\033[3;36m", end="")
+
+
+def cyanUnderline():
+    print("\033[4;36m", end="")
+
+
+def cyanStrikeThrough():
+    print("\033[9;36m", end="")
 
 # Grey:-
-def greyD():
-    print("\033[0;90m",end="")
 
-def greyB():
-    print("\033[1;90m",end="")
 
-def greyL():
-    print("\033[2;90m",end="")
+def grey():
+    print("\033[0;90m", end="")
 
-def greyI():
-    print("\033[3;90m",end="")
 
-def greyU():
-    print("\033[4;90m",end="")
+def greyBold():
+    print("\033[1;90m", end="")
 
-def greyS():
-    print("\033[9;90m",end="")
+
+def greyLight():
+    print("\033[2;90m", end="")
+
+
+def greyItalics():
+    print("\033[3;90m", end="")
+
+
+def greyUnderline():
+    print("\033[4;90m", end="")
+
+
+def greyStrikeThrough():
+    print("\033[9;90m", end="")
 
 # White:
-def reset():
-    print("\033[0;0m",end='');
-
-def whiteB():
-    print("\033[0;1m",end="")
-
-def whiteL():
-    print("\033[0;2m",end="")
-
-def whiteI():
-    print("\033[0;3m",end="")
-
-def whiteU():
-    print("\033[0;4m",end="")
-
-def whiteS():
-    print("\033[0;8m",end="")
 
 
-# fill variants:
-def redfill():
-    print("\033[31;41m",end='')
+def white():
+    print("\033[0;0m", end='')
 
-def yellowfill():
-    print("\033[33;43m",end='')
 
-def greenfill():
-    print("\033[32;42m",end='')
+def whiteBold():
+    print("\033[0;1m", end="")
 
-def bluefill():
-    print("\033[34;44m",end='')
 
-def magentafill():
-    print("\033[35;45m",end='')
+def whiteLight():
+    print("\033[0;2m", end="")
 
-def cyanfill():
-    print("\033[36;46m",end='')
 
-def whitefill():
-    print("\033[37;47m",end='')
+def whiteItalics():
+    print("\033[0;3m", end="")
 
-def blackfill():
-    print("\033[30;40m",end='')
 
-def greyfill():
-    print("\033[90;100m",end='')
+def whiteUnderline():
+    print("\033[0;4m", end="")
+
+
+def whiteStrikeThrough():
+    print("\033[9;9m", end="")
+
+
+# filled variant:
+def redFilled():
+    print("\033[31;41m", end='')
+
+
+def yellowFilled():
+    print("\033[33;43m", end='')
+
+
+def greenFilled():
+    print("\033[32;42m", end='')
+
+
+def blueFilled():
+    print("\033[34;44m", end='')
+
+
+def magentaFilled():
+    print("\033[35;45m", end='')
+
+
+def cyanFilled():
+    print("\033[36;46m", end='')
+
+
+def whiteFilled():
+    print("\033[37;47m", end='')
+
+
+def blackFilled():
+    print("\033[30;40m", end='')
+
+
+def greyFilled():
+    print("\033[90;100m", end='')
 
 # Background:
-def blackbg():
-    print("\033[7;30m",end="")
 
-def redbg():
-    print("\033[7;31m",end="")
-    
-def greenbg():
-    print("\033[7;32",end="")
 
-def yellowbg():
-    print("\033[7;33m",end="")
+def blackBg():
+    print("\033[7;30m", end="")
 
-def bluebg():
-    print("\033[7;34m",end="")
 
-def magentabg():
-    print("\033[7;35m",end="")
+def redBg():
+    print("\033[7;31m", end="")
 
-def cyanbg():
-    print("\033[7;36m",end="")
 
-def whitebg():
-    print("\033[7;37m",end="")
+def greenBg():
+    print("\033[7;32", end="")
 
-def greybg():
-    print("\033[7;90m",end="")
+
+def yellowBg():
+    print("\033[7;33m", end="")
+
+
+def blueBg():
+    print("\033[7;34m", end="")
+
+
+def magentaBg():
+    print("\033[7;35m", end="")
+
+
+def cyanBg():
+    print("\033[7;36m", end="")
+
+
+def whiteBg():
+    print("\033[7;37m", end="")
+
+
+def greyBg():
+    print("\033[7;90m", end="")
 
 # Invisible:
+
+
 def invisible():
-    print("\033[0;8m",end="")
-    
-    
+    print("\033[0;8m", end="")

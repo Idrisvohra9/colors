@@ -2,10 +2,10 @@ import setuptools
 
 with open("README.md", "r") as fh:
     description = fh.read()
-
+# TODO: Increment the version number and release it.
 setuptools.setup(
     name="trmnl-colors",
-    version="4.0.7",
+    version="4.0.8",
     author="Idris-Vohra",
     author_email="idrishaider987@gmail.com",
     packages=["trmnl_colors"],
