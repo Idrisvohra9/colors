@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 # TODO: Increment the version number and release it.
 setuptools.setup(
     name="trmnl-colors",
-    version="4.0.8",
+    version="4.0.9",
     author="Idris-Vohra",
     author_email="idrishaider987@gmail.com",
     packages=["trmnl_colors"],

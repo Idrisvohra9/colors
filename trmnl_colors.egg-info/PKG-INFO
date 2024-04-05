@@ -1,6 +1,6 @@
 Metadata-Version: 2.1
 Name: trmnl-colors
-Version: 4.0.8
+Version: 4.0.9
 Summary: Colors, text formats, decorations and much more for TERMINAL
 Home-page: https://github.com/Idrisvohra9/colors
 Author: Idris-Vohra
@@ -67,4 +67,4 @@ white()
 ![Screenshots](https://github.com/Idrisvohra9/trmnl-colors/blob/main/static/Screenshot%202023-08-24%20172610.png?raw=true)
 > Explore & stay Creative
 
->## by: [Idris Vohra]("https://github.com/Idrisvohra9")
+>## by: [Idris Vohra](https://github.com/Idrisvohra9)
